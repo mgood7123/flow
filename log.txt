@@ -1,0 +1,470 @@
+[ now : 17:33:9:277] [ since last : 0:0:0:0 ] START
+[ now : 17:33:9:288] [ since last : 0:0:0:11 ] ScriptManager starting
+[ now : 17:33:9:290] [ since last : 0:0:0:1 ] adding Net21/netstandard.dll
+[ now : 17:33:9:313] [ since last : 0:0:0:23 ] added Net21/netstandard.dll
+[ now : 17:33:9:313] [ since last : 0:0:0:0 ] adding C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+[ now : 17:33:9:318] [ since last : 0:0:0:4 ] added C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+[ now : 17:33:9:319] [ since last : 0:0:0:1 ] adding C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll
+[ now : 17:33:9:321] [ since last : 0:0:0:2 ] added C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll
+[ now : 17:33:9:323] [ since last : 0:0:0:2 ] adding C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Library\ScriptAssemblies\Assembly-CSharp.dll
+[ now : 17:33:9:324] [ since last : 0:0:0:1 ] added C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Library\ScriptAssemblies\Assembly-CSharp.dll
+[ now : 17:33:9:326] [ since last : 0:0:0:1 ] Created directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts
+[ now : 17:33:9:328] [ since last : 0:0:0:2 ] cleaning directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP
+[ now : 17:33:9:334] [ since last : 0:0:0:6 ] cleaned directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP
+[ now : 17:33:9:340] [ since last : 0:0:0:5 ] attempting to create directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts/TMP/C7527B
+[ now : 17:33:9:342] [ since last : 0:0:0:2 ] temp directory created: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP\C7527B
+[ now : 17:33:9:344] [ since last : 0:0:0:1 ] file watcher started, Directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts
+[ now : 17:33:9:373] [ since last : 0:0:0:29 ] fs existed: plugin_manager.cs
+[ now : 17:33:9:376] [ since last : 0:0:0:3 ] COMPILER: COMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:33:9:383] [ since last : 0:0:0:6 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 17:33:9:384] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 17:33:9:424] [ since last : 0:0:0:39 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generating code>
+[ now : 17:33:9:426] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generated code>
+[ now : 17:33:9:429] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <compiling the following script>
+using System.Collections.Generic;
+using static ScriptManager;
+public static class loop {
+    public static void execute_static(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            CompileInfo compileInfo = item.Value;
+            if (compileInfo.CurrentAssembly != null) {
+                if (obtain_static_method<ScriptManager.RunnableUtils.Runnable>(compileInfo, @class, method, out ScriptManager.RunnableUtils.Runnable del))
+                    del();
+            }
+        }
+    }
+
+    public static void execute(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            execute_direct(item.Value, @class, method, @params);
+        }
+    }
+
+    public static void execute_direct(CompileInfo compileInfo, string @class, string method, params object[] @params) {
+        if (compileInfo.CurrentAssembly != null) {
+            if (obtain_method<ScriptManager.RunnableUtils.Runnable<object>>(compileInfo, @class, method, out object instance, out ScriptManager.RunnableUtils.Runnable<object> del)) {
+                del(instance);
+            }
+        }
+    }
+
+    public static void precompile(CompileInfo compileInfo, string @class, string method) {
+        if (compileInfo.CurrentAssembly != null) {
+            obtain_method<ScriptManager.RunnableUtils.Runnable<object>>(compileInfo, @class, method, out _, out _);
+        }
+    }
+}
+
+[ now : 17:33:9:618] [ since last : 0:0:0:189 ] COMPILER: COMPILE <INTERNAL> <script loaded>
+[ now : 17:33:9:620] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <emitting DLL to memory>
+[ now : 17:33:9:625] [ since last : 0:0:0:4 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 17:33:9:627] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 17:33:11:731] [ since last : 0:0:2:104 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory>
+[ now : 17:33:11:732] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 17:33:11:734] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory successfully>
+[ now : 17:33:11:735] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory successfully>
+[ now : 17:33:11:738] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <loading assembly>
+[ now : 17:33:11:739] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loading assembly>
+[ now : 17:33:11:743] [ since last : 0:0:0:4 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loaded assembly>
+[ now : 17:33:11:744] [ since last : 0:0:0:1 ] COMPILER: COMPILE <INTERNAL> <loaded assembly>
+[ now : 17:33:11:745] [ since last : 0:0:0:1 ] COMPILER: LOADING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:33:11:747] [ since last : 0:0:0:2 ] onScriptLoaded : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:33:11:749] [ since last : 0:0:0:1 ] precompiling Main.onStart : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:33:11:751] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generating code>
+[ now : 17:33:11:753] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generated code>
+[ now : 17:33:11:754] [ since last : 0:0:0:0 ] COMPILER: COMPILE <INTERNAL> <compiling the following script>
+using System.Collections.Generic;
+using static ScriptManager;
+public static class loop {
+    public static void execute_static(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            CompileInfo compileInfo = item.Value;
+            if (compileInfo.CurrentAssembly != null) {
+                if (obtain_static_method<ScriptManager.RunnableUtils.Runnable<ScriptManager.ThreadRunner,UnityEngine.GameObject>>(compileInfo, @class, method, out ScriptManager.RunnableUtils.Runnable<ScriptManager.ThreadRunner,UnityEngine.GameObject> del))
+                    del((ScriptManager.ThreadRunner) @params[0], (UnityEngine.GameObject) @params[1]);
+            }
+        }
+    }
+
+    public static void execute(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            execute_direct(item.Value, @class, method, @params);
+        }
+    }
+
+    public static void execute_direct(CompileInfo compileInfo, string @class, string method, params object[] @params) {
+        if (compileInfo.CurrentAssembly != null) {
+            if (obtain_method<ScriptManager.RunnableUtils.Runnable<object, ScriptManager.ThreadRunner,UnityEngine.GameObject>>(compileInfo, @class, method, out object instance, out ScriptManager.RunnableUtils.Runnable<object, ScriptManager.ThreadRunner,UnityEngine.GameObject> del)) {
+                del(instance, (ScriptManager.ThreadRunner) @params[0], (UnityEngine.GameObject) @params[1]);
+            }
+        }
+    }
+
+    public static void precompile(CompileInfo compileInfo, string @class, string method) {
+        if (compileInfo.CurrentAssembly != null) {
+            obtain_method<ScriptManager.RunnableUtils.Runnable<object, ScriptManager.ThreadRunner,UnityEngine.GameObject>>(compileInfo, @class, method, out _, out _);
+        }
+    }
+}
+
+[ now : 17:33:11:757] [ since last : 0:0:0:3 ] COMPILER: COMPILE <INTERNAL> <script loaded>
+[ now : 17:33:11:759] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <emitting DLL to memory>
+[ now : 17:33:11:785] [ since last : 0:0:0:25 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory>
+[ now : 17:33:11:786] [ since last : 0:0:0:1 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory successfully>
+[ now : 17:33:11:789] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <loading assembly>
+[ now : 17:33:11:791] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <loaded assembly>
+[ now : 17:33:11:795] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <class 'Main' instantiated from assembly: 'C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs'>
+[ now : 17:33:11:805] [ since last : 0:0:0:9 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`3[System.Object,ScriptManager+ThreadRunner,UnityEngine.GameObject]>
+[ now : 17:33:11:809] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method onStart with signature Void onStart(ThreadRunner, UnityEngine.GameObject) on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`3[System.Object,ScriptManager+ThreadRunner,UnityEngine.GameObject]>
+[ now : 17:33:11:816] [ since last : 0:0:0:7 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`3[System.Object,ScriptManager+ThreadRunner,UnityEngine.GameObject]' from the method 'onStart' with signature 'public Void onStart(ThreadRunner, UnityEngine.GameObject)' from the class 'Main'>
+[ now : 17:33:11:819] [ since last : 0:0:0:3 ] precompiled Main.onStart : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:33:11:823] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs FINISHED COMPILATION JOB
+[ now : 17:33:12:777] [ since last : 0:0:0:954 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 17:33:12:779] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method update with signature Void update() on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 17:33:12:781] [ since last : 0:0:0:1 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`1[System.Object]' from the method 'update' with signature 'public Void update()' from the class 'Main'>
+[ now : 17:35:5:284] [ since last : 0:1:52:502 ] fs changed: plugin_manager.cs
+[ now : 17:35:5:289] [ since last : 0:0:0:5 ] COMPILER: STOPPING EXISTING COMPILATION: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:35:5:297] [ since last : 0:0:0:7 ] COMPILER: RECOMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:35:5:313] [ since last : 0:0:0:16 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 17:35:5:314] [ since last : 0:0:0:0 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 17:35:5:318] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 17:35:5:321] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 17:35:5:366] [ since last : 0:0:0:45 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 17:35:5:374] [ since last : 0:0:0:8 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory successfully>
+[ now : 17:35:5:382] [ since last : 0:0:0:8 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loading assembly>
+[ now : 17:35:5:386] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loaded assembly>
+[ now : 17:35:5:395] [ since last : 0:0:0:9 ] COMPILER: RELOADING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 17:35:5:402] [ since last : 0:0:0:7 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 17:35:5:407] [ since last : 0:0:0:5 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method reload_begin with signature Void reload_begin(System.Collections.Generic.List`1[System.Object]) on Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 17:35:5:411] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]' from the method 'reload_begin' with signature 'public Void reload_begin(System.Collections.Generic.List`1[System.Object])' from the class 'Main'>
+[ now : 17:35:5:416] [ since last : 0:0:0:4 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <class 'Main' instantiated from assembly: 'C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs'>
+[ now : 17:35:5:419] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 17:35:5:423] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method reload_finish with signature Void reload_finish(System.Collections.Generic.List`1[System.Object]) on Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 17:35:5:444] [ since last : 0:0:0:21 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]' from the method 'reload_finish' with signature 'public Void reload_finish(System.Collections.Generic.List`1[System.Object])' from the class 'Main'>
+[ now : 17:35:5:484] [ since last : 0:0:0:39 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <UNCAUGHT EXCEPTION> : UnityEngine.UnityException: VisualElementCreation can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at (wrapper managed-to-native) UnityEngine.UIElements.UIElementsRuntimeUtilityNative.VisualElementCreation()
+  at UnityEngine.UIElements.Focusable..ctor () [0x00008] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.VisualElement..ctor () [0x00081] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.BindableElement..ctor () [0x00000] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.BaseVerticalCollectionView..ctor () [0x0003f] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.BaseListView..ctor () [0x00015] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.ListView..ctor () [0x00000] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at Main+TextView`1[E]..ctor (System.Collections.Generic.List`1[T] source, System.Func`2[T,TResult] cast) [0x00000] in <d9d7e6b9cb674ec5ba7002d8d243651c>:0 
+  at Main.reload_finish (System.Collections.Generic.List`1[T] data) [0x00031] in <d9d7e6b9cb674ec5ba7002d8d243651c>:0 
+  at (wrapper dynamic-method) System.Object.reload_finish(object,System.Collections.Generic.List`1<object>)
+  at ScriptManager.complete_after_recompile (ScriptManager+CompileInfo compileInfo) [0x0009a] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\ScriptManager.cs:1109 
+  at ScriptManager.compile (ScriptManager+CompileInfo compileInfo) [0x003c5] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\ScriptManager.cs:1240 
+[ now : 17:35:9:878] [ since last : 0:0:4:394 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 17:35:9:880] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method update with signature Void update() on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 17:35:9:882] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`1[System.Object]' from the method 'update' with signature 'public Void update()' from the class 'Main'>
+[ now : 21:1:44:706] [ since last : 3:26:34:823 ] fs changed: plugin_manager.cs
+[ now : 21:1:44:953] [ since last : 0:0:0:247 ] COMPILER: STOPPING EXISTING COMPILATION: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:1:45:16] [ since last : 0:0:0:62 ] COMPILER: RECOMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:1:45:47] [ since last : 0:0:0:30 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 21:1:45:60] [ since last : 0:0:0:13 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 21:1:45:267] [ since last : 0:0:0:207 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 21:1:45:302] [ since last : 0:0:0:34 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 21:1:48:707] [ since last : 0:0:3:405 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 21:1:49:214] [ since last : 0:0:0:506 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <assembly could not be emitted for script> : (91,45): error CS1503: Argument 1: cannot convert from 'object' to 'UnityEngine.UIElements.VisualElement'
+
+[ now : 21:2:27:998] [ since last : 0:0:38:784 ] fs changed: plugin_manager.cs
+[ now : 21:2:28:1] [ since last : 0:0:0:2 ] COMPILER: STOPPING EXISTING COMPILATION: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:2:28:49] [ since last : 0:0:0:48 ] COMPILER: RECOMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:2:28:62] [ since last : 0:0:0:13 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 21:2:28:64] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 21:2:28:69] [ since last : 0:0:0:5 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 21:2:28:72] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 21:2:28:259] [ since last : 0:0:0:187 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 21:2:28:262] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory successfully>
+[ now : 21:2:28:264] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loading assembly>
+[ now : 21:2:28:278] [ since last : 0:0:0:13 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loaded assembly>
+[ now : 21:2:28:280] [ since last : 0:0:0:2 ] COMPILER: RELOADING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:2:28:282] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:2:28:288] [ since last : 0:0:0:6 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method reload_begin with signature Void reload_begin(System.Collections.Generic.List`1[System.Object]) on Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:2:28:304] [ since last : 0:0:0:15 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]' from the method 'reload_begin' with signature 'public Void reload_begin(System.Collections.Generic.List`1[System.Object])' from the class 'Main'>
+[ now : 21:2:28:341] [ since last : 0:0:0:37 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <class 'Main' instantiated from assembly: 'C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs'>
+[ now : 21:2:28:342] [ since last : 0:0:0:1 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:2:28:351] [ since last : 0:0:0:8 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method reload_finish with signature Void reload_finish(System.Collections.Generic.List`1[System.Object]) on Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:2:28:370] [ since last : 0:0:0:19 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]' from the method 'reload_finish' with signature 'public Void reload_finish(System.Collections.Generic.List`1[System.Object])' from the class 'Main'>
+[ now : 21:2:28:445] [ since last : 0:0:0:74 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <UNCAUGHT EXCEPTION> : System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+  at System.Collections.Generic.List`1[T].get_Item (System.Int32 index) [0x00009] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at Main.reload_finish (System.Collections.Generic.List`1[T] data) [0x00029] in <5fbbf415219246e3a8fd30af2b1df887>:0 
+  at (wrapper dynamic-method) System.Object.reload_finish(object,System.Collections.Generic.List`1<object>)
+  at ScriptManager.complete_after_recompile (ScriptManager+CompileInfo compileInfo) [0x0009a] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\ScriptManager.cs:1109 
+  at ScriptManager.compile (ScriptManager+CompileInfo compileInfo) [0x003c5] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\ScriptManager.cs:1240 
+[ now : 21:2:30:956] [ since last : 0:0:2:511 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 21:2:30:959] [ since last : 0:0:0:3 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method update with signature Void update() on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 21:2:30:963] [ since last : 0:0:0:3 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`1[System.Object]' from the method 'update' with signature 'public Void update()' from the class 'Main'>
+[ now : 21:4:8:662] [ since last : 0:1:37:698 ] fs changed: plugin_manager.cs
+[ now : 21:4:8:664] [ since last : 0:0:0:2 ] COMPILER: STOPPING EXISTING COMPILATION: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:4:8:667] [ since last : 0:0:0:3 ] COMPILER: RECOMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:4:8:671] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 21:4:8:672] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 21:4:8:716] [ since last : 0:0:0:43 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 21:4:8:724] [ since last : 0:0:0:8 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 21:4:8:830] [ since last : 0:0:0:106 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 21:4:8:832] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory successfully>
+[ now : 21:4:8:833] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loading assembly>
+[ now : 21:4:8:836] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loaded assembly>
+[ now : 21:4:8:839] [ since last : 0:0:0:3 ] COMPILER: RELOADING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:4:8:845] [ since last : 0:0:0:6 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:4:8:849] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method reload_begin with signature Void reload_begin(System.Collections.Generic.List`1[System.Object]) on Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:4:8:853] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]' from the method 'reload_begin' with signature 'public Void reload_begin(System.Collections.Generic.List`1[System.Object])' from the class 'Main'>
+[ now : 21:4:8:857] [ since last : 0:0:0:4 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <class 'Main' instantiated from assembly: 'C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs'>
+[ now : 21:4:8:863] [ since last : 0:0:0:6 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:4:8:866] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method reload_finish with signature Void reload_finish(System.Collections.Generic.List`1[System.Object]) on Main with signature (the initial object is hidden 'this') System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]>
+[ now : 21:4:8:881] [ since last : 0:0:0:14 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'System.Action`2[System.Object,System.Collections.Generic.List`1[System.Object]]' from the method 'reload_finish' with signature 'public Void reload_finish(System.Collections.Generic.List`1[System.Object])' from the class 'Main'>
+[ now : 21:4:9:67] [ since last : 0:0:0:186 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <UNCAUGHT EXCEPTION> : UnityEngine.UnityException: VisualElementCreation can only be called from the main thread.
+Constructors and field initializers will be executed from the loading thread when loading a scene.
+Don't use this function in the constructor or field initializers, instead move initialization code to the Awake or Start function.
+  at (wrapper managed-to-native) UnityEngine.UIElements.UIElementsRuntimeUtilityNative.VisualElementCreation()
+  at UnityEngine.UIElements.Focusable..ctor () [0x00008] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.VisualElement..ctor () [0x00081] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.BindableElement..ctor () [0x00000] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.BaseVerticalCollectionView..ctor () [0x0003f] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.BaseListView..ctor () [0x00015] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at UnityEngine.UIElements.ListView..ctor () [0x00000] in <5566f9e97c3b47c3802abbb5405c3a92>:0 
+  at Main+TextView`1[E]..ctor (System.Collections.Generic.List`1[T] source, System.Func`2[T,TResult] cast) [0x00000] in <9d671785014845888701f822a17eec95>:0 
+  at Main.reload_finish (System.Collections.Generic.List`1[T] data) [0x00057] in <9d671785014845888701f822a17eec95>:0 
+  at (wrapper dynamic-method) System.Object.reload_finish(object,System.Collections.Generic.List`1<object>)
+  at ScriptManager.complete_after_recompile (ScriptManager+CompileInfo compileInfo) [0x0009a] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\ScriptManager.cs:1109 
+  at ScriptManager.compile (ScriptManager+CompileInfo compileInfo) [0x003c5] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\ScriptManager.cs:1240 
+[ now : 21:4:11:125] [ since last : 0:0:2:58 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 21:4:11:134] [ since last : 0:0:0:8 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method update with signature Void update() on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 21:4:11:137] [ since last : 0:0:0:3 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`1[System.Object]' from the method 'update' with signature 'public Void update()' from the class 'Main'>
+[ now : 21:8:47:231] [ since last : 0:4:36:93 ] fs error: System.Threading.ThreadAbortException: Thread was being aborted.
+  at (wrapper managed-to-native) System.Threading.Monitor.Monitor_wait(object,int)
+  at System.Threading.Monitor.ObjWait (System.Boolean exitContext, System.Int32 millisecondsTimeout, System.Object obj) [0x0002f] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout, System.Boolean exitContext) [0x0000e] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.SemaphoreSlim.WaitUntilCountOrTimeout (System.Int32 millisecondsTimeout, System.UInt32 startTime, System.Threading.CancellationToken cancellationToken) [0x0001d] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.SemaphoreSlim.Wait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x000d9] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Collections.Concurrent.BlockingCollection`1[T].TryTakeWithNoTimeValidation (T& item, System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken, System.Threading.CancellationTokenSource combinedTokenSource) [0x00067] in <ac9a71325ef54cff92d92c6065ca43a6>:0 
+  at System.Collections.Concurrent.BlockingCollection`1+<GetConsumingEnumerable>d__68[T].MoveNext () [0x0004d] in <ac9a71325ef54cff92d92c6065ca43a6>:0 
+  at BufferingFileSystemWatcher.<RaiseBufferedEventsUntilCancelled>b__70_0 () [0x000b9] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\BufferingFileSystemWatcher.cs:246 
+[ now : 21:50:4:797] [ since last : 0:0:0:1 ] START
+[ now : 21:50:4:832] [ since last : 0:0:0:34 ] ScriptManager starting
+[ now : 21:50:4:834] [ since last : 0:0:0:2 ] adding Net21/netstandard.dll
+[ now : 21:50:4:881] [ since last : 0:0:0:46 ] added Net21/netstandard.dll
+[ now : 21:50:4:886] [ since last : 0:0:0:5 ] adding C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Build\2D Project_Data\Managed\UnityEngine.CoreModule.dll
+[ now : 21:50:4:893] [ since last : 0:0:0:6 ] added C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Build\2D Project_Data\Managed\UnityEngine.CoreModule.dll
+[ now : 21:50:4:897] [ since last : 0:0:0:4 ] adding C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Build\2D Project_Data\Managed\UnityEngine.UIElementsModule.dll
+[ now : 21:50:4:908] [ since last : 0:0:0:11 ] added C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Build\2D Project_Data\Managed\UnityEngine.UIElementsModule.dll
+[ now : 21:50:4:912] [ since last : 0:0:0:3 ] adding C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Build\2D Project_Data\Managed\Assembly-CSharp.dll
+[ now : 21:50:4:915] [ since last : 0:0:0:3 ] added C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Build\2D Project_Data\Managed\Assembly-CSharp.dll
+[ now : 21:50:4:919] [ since last : 0:0:0:3 ] Created directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts
+[ now : 21:50:4:930] [ since last : 0:0:0:10 ] cleaning directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP
+[ now : 21:50:4:966] [ since last : 0:0:0:36 ] cleaned directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP
+[ now : 21:50:5:2] [ since last : 0:0:0:35 ] attempting to create directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts/TMP/088E8B
+[ now : 21:50:5:10] [ since last : 0:0:0:7 ] temp directory created: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP\088E8B
+[ now : 21:50:5:11] [ since last : 0:0:0:1 ] file watcher started, Directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts
+[ now : 21:50:5:223] [ since last : 0:0:0:211 ] fs existed: plugin_manager.cs
+[ now : 21:50:5:232] [ since last : 0:0:0:8 ] COMPILER: COMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:50:5:267] [ since last : 0:0:0:35 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 21:50:5:269] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 21:50:5:313] [ since last : 0:0:0:43 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generating code>
+[ now : 21:50:5:355] [ since last : 0:0:0:42 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generated code>
+[ now : 21:50:5:360] [ since last : 0:0:0:5 ] COMPILER: COMPILE <INTERNAL> <compiling the following script>
+using System.Collections.Generic;
+using static ScriptManager;
+public static class loop {
+    public static void execute_static(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            CompileInfo compileInfo = item.Value;
+            if (compileInfo.CurrentAssembly != null) {
+                if (obtain_static_method<ScriptManager.RunnableUtils.Runnable>(compileInfo, @class, method, out ScriptManager.RunnableUtils.Runnable del))
+                    del();
+            }
+        }
+    }
+
+    public static void execute(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            execute_direct(item.Value, @class, method, @params);
+        }
+    }
+
+    public static void execute_direct(CompileInfo compileInfo, string @class, string method, params object[] @params) {
+        if (compileInfo.CurrentAssembly != null) {
+            if (obtain_method<ScriptManager.RunnableUtils.Runnable<object>>(compileInfo, @class, method, out object instance, out ScriptManager.RunnableUtils.Runnable<object> del)) {
+                del(instance);
+            }
+        }
+    }
+
+    public static void precompile(CompileInfo compileInfo, string @class, string method) {
+        if (compileInfo.CurrentAssembly != null) {
+            obtain_method<ScriptManager.RunnableUtils.Runnable<object>>(compileInfo, @class, method, out _, out _);
+        }
+    }
+}
+
+[ now : 21:50:5:836] [ since last : 0:0:0:475 ] COMPILER: COMPILE <INTERNAL> <script loaded>
+[ now : 21:50:5:838] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <emitting DLL to memory>
+[ now : 21:50:5:841] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 21:50:5:842] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 21:50:10:745] [ since last : 0:0:4:903 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 21:50:10:748] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory successfully>
+[ now : 21:50:10:751] [ since last : 0:0:0:3 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loading assembly>
+[ now : 21:50:10:760] [ since last : 0:0:0:9 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory>
+[ now : 21:50:10:762] [ since last : 0:0:0:1 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory successfully>
+[ now : 21:50:10:764] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <loading assembly>
+[ now : 21:50:10:776] [ since last : 0:0:0:11 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <loaded assembly>
+[ now : 21:50:10:780] [ since last : 0:0:0:4 ] COMPILER: COMPILE <INTERNAL> <loaded assembly>
+[ now : 21:50:10:781] [ since last : 0:0:0:1 ] COMPILER: LOADING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:50:10:788] [ since last : 0:0:0:6 ] onScriptLoaded : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:50:10:789] [ since last : 0:0:0:1 ] precompiling Main.onStart : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:50:10:794] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generating code>
+[ now : 21:50:10:796] [ since last : 0:0:0:1 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generated code>
+[ now : 21:50:10:798] [ since last : 0:0:0:2 ] COMPILER: COMPILE <INTERNAL> <compiling the following script>
+using System.Collections.Generic;
+using static ScriptManager;
+public static class loop {
+    public static void execute_static(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            CompileInfo compileInfo = item.Value;
+            if (compileInfo.CurrentAssembly != null) {
+                if (obtain_static_method<ScriptManager.RunnableUtils.Runnable<ScriptManager.ThreadRunner,UnityEngine.GameObject>>(compileInfo, @class, method, out ScriptManager.RunnableUtils.Runnable<ScriptManager.ThreadRunner,UnityEngine.GameObject> del))
+                    del((ScriptManager.ThreadRunner) @params[0], (UnityEngine.GameObject) @params[1]);
+            }
+        }
+    }
+
+    public static void execute(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            execute_direct(item.Value, @class, method, @params);
+        }
+    }
+
+    public static void execute_direct(CompileInfo compileInfo, string @class, string method, params object[] @params) {
+        if (compileInfo.CurrentAssembly != null) {
+            if (obtain_method<ScriptManager.RunnableUtils.Runnable<object, ScriptManager.ThreadRunner,UnityEngine.GameObject>>(compileInfo, @class, method, out object instance, out ScriptManager.RunnableUtils.Runnable<object, ScriptManager.ThreadRunner,UnityEngine.GameObject> del)) {
+                del(instance, (ScriptManager.ThreadRunner) @params[0], (UnityEngine.GameObject) @params[1]);
+            }
+        }
+    }
+
+    public static void precompile(CompileInfo compileInfo, string @class, string method) {
+        if (compileInfo.CurrentAssembly != null) {
+            obtain_method<ScriptManager.RunnableUtils.Runnable<object, ScriptManager.ThreadRunner,UnityEngine.GameObject>>(compileInfo, @class, method, out _, out _);
+        }
+    }
+}
+
+[ now : 21:50:10:807] [ since last : 0:0:0:9 ] COMPILER: COMPILE <INTERNAL> <script loaded>
+[ now : 21:50:10:808] [ since last : 0:0:0:1 ] COMPILER: COMPILE <INTERNAL> <emitting DLL to memory>
+[ now : 21:50:10:847] [ since last : 0:0:0:38 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory>
+[ now : 21:50:10:853] [ since last : 0:0:0:5 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory successfully>
+[ now : 21:50:10:855] [ since last : 0:0:0:1 ] COMPILER: COMPILE <INTERNAL> <loading assembly>
+[ now : 21:50:10:858] [ since last : 0:0:0:3 ] COMPILER: COMPILE <INTERNAL> <loaded assembly>
+[ now : 21:50:10:862] [ since last : 0:0:0:4 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <class 'Main' instantiated from assembly: 'C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs'>
+[ now : 21:50:10:883] [ since last : 0:0:0:20 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`3[System.Object,ScriptManager+ThreadRunner,UnityEngine.GameObject]>
+[ now : 21:50:10:887] [ since last : 0:0:0:4 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method onStart with signature Void onStart(ThreadRunner, UnityEngine.GameObject) on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`3[System.Object,ScriptManager+ThreadRunner,UnityEngine.GameObject]>
+[ now : 21:50:10:928] [ since last : 0:0:0:40 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`3[System.Object,ScriptManager+ThreadRunner,UnityEngine.GameObject]' from the method 'onStart' with signature 'public Void onStart(ThreadRunner, UnityEngine.GameObject)' from the class 'Main'>
+[ now : 21:50:10:930] [ since last : 0:0:0:2 ] precompiled Main.onStart : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 21:50:10:932] [ since last : 0:0:0:1 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs FINISHED COMPILATION JOB
+[ now : 21:50:11:226] [ since last : 0:0:0:294 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <obtaining methods in Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 21:50:11:227] [ since last : 0:0:0:0 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <found candidate: Method update with signature Void update() on Main with signature (the initial object is hidden 'this') ScriptManager+RunnableUtils+Runnable`1[System.Object]>
+[ now : 21:50:11:230] [ since last : 0:0:0:2 ] COMPILER: INSTANCE INVOKE <INTERNAL> <Path : C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs> <created delegate 'ScriptManager+RunnableUtils+Runnable`1[System.Object]' from the method 'update' with signature 'public Void update()' from the class 'Main'>
+[ now : 21:52:43:880] [ since last : 0:2:32:650 ] fs error: System.Threading.ThreadAbortException: Thread was being aborted.
+  at (wrapper managed-to-native) System.Threading.Monitor.Monitor_wait(object,int)
+  at System.Threading.Monitor.ObjWait (System.Boolean exitContext, System.Int32 millisecondsTimeout, System.Object obj) [0x0002f] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout, System.Boolean exitContext) [0x0000e] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.SemaphoreSlim.WaitUntilCountOrTimeout (System.Int32 millisecondsTimeout, System.UInt32 startTime, System.Threading.CancellationToken cancellationToken) [0x0001d] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.SemaphoreSlim.Wait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x000d9] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Collections.Concurrent.BlockingCollection`1[T].TryTakeWithNoTimeValidation (T& item, System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken, System.Threading.CancellationTokenSource combinedTokenSource) [0x00067] in <ac9a71325ef54cff92d92c6065ca43a6>:0 
+  at System.Collections.Concurrent.BlockingCollection`1+<GetConsumingEnumerable>d__68[T].MoveNext () [0x0004d] in <ac9a71325ef54cff92d92c6065ca43a6>:0 
+  at BufferingFileSystemWatcher.<RaiseBufferedEventsUntilCancelled>b__70_0 () [0x000b9] in <a11f6711346d42ddbfe48f5f924da284>:0 
+[ now : 22:41:40:876] [ since last : 0:0:0:6 ] START
+[ now : 22:41:43:572] [ since last : 0:0:2:696 ] ScriptManager starting
+[ now : 22:41:43:575] [ since last : 0:0:0:3 ] adding Net21/netstandard.dll
+[ now : 22:41:43:626] [ since last : 0:0:0:51 ] added Net21/netstandard.dll
+[ now : 22:41:43:629] [ since last : 0:0:0:2 ] adding C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+[ now : 22:41:43:640] [ since last : 0:0:0:10 ] added C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+[ now : 22:41:43:643] [ since last : 0:0:0:3 ] adding C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll
+[ now : 22:41:43:653] [ since last : 0:0:0:10 ] added C:\Unity_Editor\2023.2.3f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll
+[ now : 22:41:43:656] [ since last : 0:0:0:2 ] adding C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Library\ScriptAssemblies\Assembly-CSharp.dll
+[ now : 22:41:43:662] [ since last : 0:0:0:6 ] added C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Library\ScriptAssemblies\Assembly-CSharp.dll
+[ now : 22:41:43:665] [ since last : 0:0:0:3 ] Created directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts
+[ now : 22:41:43:668] [ since last : 0:0:0:3 ] cleaning directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP
+[ now : 22:41:43:679] [ since last : 0:0:0:11 ] cleaned directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP
+[ now : 22:41:43:687] [ since last : 0:0:0:7 ] attempting to create directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts/TMP/D27B41
+[ now : 22:41:43:691] [ since last : 0:0:0:4 ] temp directory created: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\TMP\D27B41
+[ now : 22:41:43:694] [ since last : 0:0:0:2 ] file watcher started, Directory: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts
+[ now : 22:41:43:778] [ since last : 0:0:0:84 ] fs existed: plugin_manager.cs
+[ now : 22:41:43:841] [ since last : 0:0:0:63 ] COMPILER: COMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 22:41:43:867] [ since last : 0:0:0:25 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 22:41:43:870] [ since last : 0:0:0:2 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 22:41:43:932] [ since last : 0:0:0:61 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generating code>
+[ now : 22:41:43:966] [ since last : 0:0:0:34 ] COMPILER: INSTANCE INVOKE <INTERNAL> <generated code>
+[ now : 22:41:43:970] [ since last : 0:0:0:3 ] COMPILER: COMPILE <INTERNAL> <compiling the following script>
+using System.Collections.Generic;
+using static ScriptManager;
+public static class loop {
+    public static void execute_static(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            CompileInfo compileInfo = item.Value;
+            if (compileInfo.CurrentAssembly != null) {
+                if (obtain_static_method<ScriptManager.RunnableUtils.Runnable>(compileInfo, @class, method, out ScriptManager.RunnableUtils.Runnable del))
+                    del();
+            }
+        }
+    }
+
+    public static void execute(Dictionary<string, CompileInfo> compile_queue, string @class, string method, params object[] @params) {
+        foreach (var item in compile_queue) {
+            execute_direct(item.Value, @class, method, @params);
+        }
+    }
+
+    public static void execute_direct(CompileInfo compileInfo, string @class, string method, params object[] @params) {
+        if (compileInfo.CurrentAssembly != null) {
+            if (obtain_method<ScriptManager.RunnableUtils.Runnable<object>>(compileInfo, @class, method, out object instance, out ScriptManager.RunnableUtils.Runnable<object> del)) {
+                del(instance);
+            }
+        }
+    }
+
+    public static void precompile(CompileInfo compileInfo, string @class, string method) {
+        if (compileInfo.CurrentAssembly != null) {
+            obtain_method<ScriptManager.RunnableUtils.Runnable<object>>(compileInfo, @class, method, out _, out _);
+        }
+    }
+}
+
+[ now : 22:41:44:283] [ since last : 0:0:0:313 ] COMPILER: COMPILE <INTERNAL> <script loaded>
+[ now : 22:41:44:289] [ since last : 0:0:0:5 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 22:41:44:301] [ since last : 0:0:0:11 ] COMPILER: COMPILE <INTERNAL> <emitting DLL to memory>
+[ now : 22:41:44:307] [ since last : 0:0:0:6 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 22:41:47:378] [ since last : 0:0:3:70 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 22:41:47:430] [ since last : 0:0:0:52 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <assembly could not be emitted for script> : (9,5): error CS0246: The type or namespace name 'Canvas' could not be found (are you missing a using directive or an assembly reference?)
+(13,42): error CS0246: The type or namespace name 'Canvas' could not be found (are you missing a using directive or an assembly reference?)
+
+[ now : 22:41:47:922] [ since last : 0:0:0:491 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory>
+[ now : 22:41:47:927] [ since last : 0:0:0:4 ] COMPILER: COMPILE <INTERNAL> <emitted DLL to memory successfully>
+[ now : 22:41:47:931] [ since last : 0:0:0:4 ] COMPILER: COMPILE <INTERNAL> <loading assembly>
+[ now : 22:41:47:938] [ since last : 0:0:0:6 ] COMPILER: COMPILE <INTERNAL> <loaded assembly>
+[ now : 22:46:33:793] [ since last : 0:4:45:855 ] fs changed: plugin_manager.cs
+[ now : 22:46:34:156] [ since last : 0:0:0:363 ] COMPILER: COMPILING: C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs
+[ now : 22:46:34:168] [ since last : 0:0:0:11 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs STARTING COMPILATION JOB
+[ now : 22:46:34:481] [ since last : 0:0:0:312 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loading ... >
+[ now : 22:46:34:871] [ since last : 0:0:0:390 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <script loaded>
+[ now : 22:46:34:885] [ since last : 0:0:0:13 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitting DLL to memory>
+[ now : 22:46:35:330] [ since last : 0:0:0:444 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <emitted DLL to memory>
+[ now : 22:46:35:335] [ since last : 0:0:0:5 ] COMPILER: COMPILE C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\scripts\plugin_manager.cs <assembly could not be emitted for script> : (9,5): error CS0246: The type or namespace name 'Canvas' could not be found (are you missing a using directive or an assembly reference?)
+(13,42): error CS0246: The type or namespace name 'Canvas' could not be found (are you missing a using directive or an assembly reference?)
+
+[ now : 22:46:43:640] [ since last : 0:0:8:304 ] fs error: System.Threading.ThreadAbortException: Thread was being aborted.
+  at (wrapper managed-to-native) System.Threading.Monitor.Monitor_wait(object,int)
+  at System.Threading.Monitor.ObjWait (System.Boolean exitContext, System.Int32 millisecondsTimeout, System.Object obj) [0x0002f] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout, System.Boolean exitContext) [0x0000e] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.Monitor.Wait (System.Object obj, System.Int32 millisecondsTimeout) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.SemaphoreSlim.WaitUntilCountOrTimeout (System.Int32 millisecondsTimeout, System.UInt32 startTime, System.Threading.CancellationToken cancellationToken) [0x0001d] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Threading.SemaphoreSlim.Wait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x000d9] in <1334a096378c46d2bd2be2db1a37116e>:0 
+  at System.Collections.Concurrent.BlockingCollection`1[T].TryTakeWithNoTimeValidation (T& item, System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken, System.Threading.CancellationTokenSource combinedTokenSource) [0x00067] in <ac9a71325ef54cff92d92c6065ca43a6>:0 
+  at System.Collections.Concurrent.BlockingCollection`1+<GetConsumingEnumerable>d__68[T].MoveNext () [0x0004d] in <ac9a71325ef54cff92d92c6065ca43a6>:0 
+  at BufferingFileSystemWatcher.<RaiseBufferedEventsUntilCancelled>b__70_0 () [0x000b9] in C:\Users\small\Game Engine Projects\Unity Projects\Flow - Unity 2023\Assets\BufferingFileSystemWatcher.cs:246 
